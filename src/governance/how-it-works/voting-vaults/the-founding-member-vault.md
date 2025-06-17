@@ -1,5 +1,5 @@
 ---
-cover: ../../../.gitbook/assets/Founding Members Vault Cover.png
+cover: ../../../assets/Founding Members Vault Cover.png
 coverY: 86.77959385834572
 layout:
   cover:

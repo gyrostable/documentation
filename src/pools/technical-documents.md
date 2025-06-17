@@ -4,41 +4,23 @@
 
 The following documents provide mathematical specification, foundations, and in-depth analysis of the CLPs.
 
-{% file src="../.gitbook/assets/2-CLP Technical Specification.pdf" %}
-Short specification document for the 2-CLP with all technical details, but without proofs and with limited discussion.
-{% endfile %}
+[Short specification document for the 2-CLP with all technical details, but without proofs and with limited discussion.](../assets/2-CLP%20Technical%20Specification.pdf)
 
-{% file src="../.gitbook/assets/3-CLP Technical Specification.pdf" %}
-Short specification document for the 3-CLP with all technical details, but without proofs and with limited discussion.
-{% endfile %}
+[Short specification document for the 3-CLP with all technical details, but without proofs and with limited discussion.](../assets/3-CLP%20Technical%20Specification.pdf)
 
-{% file src="../.gitbook/assets/2-CLP 3-CLP Mathematics.pdf" %}
-Mathematical derivation and detailed discussion of the 2-CLP and 3-CLP.
-{% endfile %}
+[Mathematical derivation and detailed discussion of the 2-CLP and 3-CLP.](../assets/2-CLP%203-CLP%20Mathematics.pdf)
 
-{% file src="../.gitbook/assets/Transformed CFMM Prices.pdf" %}
-Some fundamental mathematical tools used in the derivation of all our CLPs.
-{% endfile %}
+[Some fundamental mathematical tools used in the derivation of all our CLPs.](../assets/Transformed%20CFMM%20Prices.pdf)
 
-{% file src="../.gitbook/assets/3-CLP Numerical Guarantees.pdf" %}
-Numerical analysis of the 3-CLP implementation, focusing on non-overflow and accuracy guarantees for the Newton iteration.
-{% endfile %}
+[Numerical analysis of the 3-CLP implementation, focusing on non-overflow and accuracy guarantees for the Newton iteration.](../assets/3-CLP%20Numerical%20Guarantees.pdf)
 
-{% file src="../.gitbook/assets/E-CLP Technical Specification.pdf" %}
-Technical overview document for the E-CLP.
-{% endfile %}
+[Technical overview document for the E-CLP.](../assets/E-CLP%20Technical%20Specification.pdf)
 
-{% file src="../.gitbook/assets/E-CLP Mathematics.pdf" %}
-Mathematical derivation and detailed discussion of the E-CLP.
-{% endfile %}
+[Mathematical derivation and detailed discussion of the E-CLP.](../assets/E-CLP%20Mathematics.pdf)
 
-{% file src="../.gitbook/assets/E-CLP high-precision calculations.pdf" %}
-Derivation and discussion of high-precision implementations of the E-CLP operations.
-{% endfile %}
+[Derivation and discussion of high-precision implementations of the E-CLP operations.](../assets/E-CLP%20high-precision%20calculations.pdf)
 
-{% file src="../.gitbook/assets/E-CLP SOR derivatives.pdf" %}
-Derivation of various derivatives used to integrate the E-CLP with Balancer's Smart Order Routing mechanism.
-{% endfile %}
+[Derivation of various derivatives used to integrate the E-CLP with Balancer's Smart Order Routing mechanism.](../assets/E-CLP%20SOR%20derivatives.pdf)
 
 ## Disclaimer
 

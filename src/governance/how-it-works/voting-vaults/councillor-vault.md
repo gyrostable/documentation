@@ -1,5 +1,5 @@
 ---
-cover: ../../../.gitbook/assets/Councillor vault cover.png
+cover: ../../../assets/Councillor vault cover.png
 coverY: 25.21228771228771
 ---
 
@@ -17,4 +17,4 @@ Selected addresses are eligible to claim a Councillor NFT. Together, the Council
 
 Councillor NFTs can be claimed [here](https://gov.gyro.finance/vaults/).
 
-<figure><img src="../../../.gitbook/assets/Gov NFT Website Size.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/Gov NFT Website Size.png" alt=""><figcaption></figcaption></figure>

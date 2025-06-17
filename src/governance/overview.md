@@ -1,5 +1,5 @@
 ---
-cover: ../.gitbook/assets/Overview Cover.png
+cover: ../assets/Overview Cover.png
 coverY: 0
 layout:
   cover:
@@ -27,9 +27,7 @@ Since the system is on Ethereum mainnet, it's permissionless: anyone can get inv
 
 This documentation will help you get started!
 
-
-
-{% embed url="https://www.youtube.com/watch?v=sS5JNlp4B90" %}
+[Governance overview video](https://www.youtube.com/watch?v=sS5JNlp4B90)
 
 ## Who governs?
 

@@ -8,11 +8,10 @@ description: Stratifying reserve assets to build resilience
 
 The Gyroscope reserve is designed to maximize the resilience of the stablecoin system. This requires that risks are 'stratified', or isolated from each other. Losses that accrue in one sub-system should never spill over into other connected sub-systems.
 
-{% hint style="info" %}
-To illustrate why this is important, consider that, for example, LP positions in the Y Curve pool take on the composed risks of USDT, Dai, USDC, TUSD, Compound, Aave, and Curve. Due to the design of a Curve AMM pool, if one of these components were to fail, the value of the whole pool would collapse.​
-
-This is commonly referred to as 'composability risk' or also 'contagion risk'.
-{% endhint %}
+> **Info:**  
+> To illustrate why this is important, consider that, for example, LP positions in the Y Curve pool take on the composed risks of USDT, Dai, USDC, TUSD, Compound, Aave, and Curve. Due to the design of a Curve AMM pool, if one of these components were to fail, the value of the whole pool would collapse.​
+>
+> This is commonly referred to as 'composability risk' or also 'contagion risk'.
 
 There are two forms of Gyroscope reserves currently:
 
@@ -39,11 +38,11 @@ If the available funds are not sufficient to cover the total amount of stablecoi
 
 **Gyroscope’s resilience, i.e., its ability to maintain its functionality even if parts of the system fail, and its ability to recover are key elements of the Gyroscope design.** A stylized representation of Gyroscope's initial reserve configuration is shown below.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Stylized representation of Gyroscope's initial reserve configuration, which may evolve over time.</p></figcaption></figure>
+<figure><img src="../../assets/image (1).png" alt=""><figcaption><p>Stylized representation of Gyroscope's initial reserve configuration, which may evolve over time.</p></figcaption></figure>
 
 The reserve structure is able to evolve over time as the on-chain asset space evolves. For the purpose of demonstrating reserve stratification principles, a future reserve structure may resemble the following once several newly launched assets reach a larger scale.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>A hypothetical future reserve structure for the purpose of illustrating reserve stratification principles.</p></figcaption></figure>
+<figure><img src="../../assets/image (3).png" alt=""><figcaption><p>A hypothetical future reserve structure for the purpose of illustrating reserve stratification principles.</p></figcaption></figure>
 
 ## Technical implementation
 

@@ -9,7 +9,7 @@ If the GYD stablecoin reserve ratio falls below a predefined trigger ratio, GYD 
 * **Partial burn**. If there is enough GYD in the recovery module to bring the stablecoin system to its target reserve ratio, the corresponding amount of GYD will be burned. This is performed by modifying the `adjustmentFactor` affecting adjusted balances.&#x20;
 * **Full burn**. A full burn is when all GYD in the module is burned and is handled separately.
 
-<figure><img src="../../.gitbook/assets/GYD-Recovery-Module-Graphic.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/GYD-Recovery-Module-Graphic.gif" alt=""><figcaption></figcaption></figure>
 
 A user can initiate a withdrawal of their staked GYD subject to an unstaking period. Until a user completes their withdrawal following the unstaking period, their GYD remains at risk in the recovery module.
 

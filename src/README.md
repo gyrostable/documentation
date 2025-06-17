@@ -1,7 +1,6 @@
 ---
 home: true
 icon: house
-heroImage: 
 bgImage: /assets/Discord Invite Image.jpg
 bgImageDark: /assets/Discord Invite Image.jpg
 bgImageStyle:

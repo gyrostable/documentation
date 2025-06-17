@@ -8,11 +8,10 @@ description: Cubic-Concentrated Liquidity Pools or 3-CLPs
 
 **Cubic CLPs, or 3-CLPs, concentrate the liquidity of three assets to a pricing range.** The first 3-CLPs are designed for symmetric price ranges \[α,1/α] on the three asset pairs in the pool. A given pool is parameterized by the pricing parameter α and the three assets that make up the pool [\[1\]](3-clps.md#notes).
 
-{% hint style="info" %}
-Given quantities of real reserves (x,y,z) in the pool and the pool's pricing parameter α, the offset a can be calculated [\[2\]](3-clps.md#notes). This offset describes the amount the pool adds to real reserves to form the virtual reserves that achieve the pricing range.&#x20;
-
-Symmetric 3-CLPs use the following invariant: (x+a)(y+a)(z+a) = L^3
-{% endhint %}
+> **Info:**  
+> Given quantities of real reserves (x,y,z) in the pool and the pool's pricing parameter α, the offset a can be calculated [\[2\]](3-clps.md#notes). This offset describes the amount the pool adds to real reserves to form the virtual reserves that achieve the pricing range.  
+>
+> Symmetric 3-CLPs use the following invariant: (x+a)(y+a)(z+a) = L^3
 
 Like in any Balancer or Curve pool with more than two assets, the prices between different pairs of assets in the 3-CLP interact. For example, if asset x is traded against asset z, the pool’s spot price of asset y vs asset z is going to change. An implication of this is that the combinations of prices that are simultaneously offered by the pool at any point in time are constrained by a mathematical relationship.
 
@@ -38,7 +37,7 @@ The region where all colors overlap is the feasible pricing region - these are c
 * _**Gas efficiency**_: Trading among three assets is more gas efficient than connecting two trades through two different 2-CLPs.&#x20;
 * _**User experience**_: 3-CLPs remain comparatively simple in architecture and user experience.
 
-<figure><img src="../.gitbook/assets/3-CLP-v4 (1).gif" alt="Stylized representation of capital efficiency gains of 3-CLPs"><figcaption><p>Stylized representation of capital efficiency gains of 3-CLPs</p></figcaption></figure>
+<figure><img src="../assets/3-CLP-v4 (1).gif" alt="Stylized representation of capital efficiency gains of 3-CLPs"><figcaption><p>Stylized representation of capital efficiency gains of 3-CLPs</p></figcaption></figure>
 
 ## Risks of 3-CLPs&#x20;
 
@@ -52,9 +51,8 @@ The region where all colors overlap is the feasible pricing region - these are c
 
 * _**Asset interaction risk:**_ since the 3-CLP contains an additional asset, LPers are exposed to strategy and adverse selection risk due to two additional price pairs.&#x20;
 
-{% hint style="info" %}
-For example, if the price of one of the assets drops to a sufficiently low level, the pool will end up with only that least valuable asset (see the figure above). This phenomenon occurs in many multi-asset AMMs, such as the Curve stablecoin 3-pool. Just like strategy risk in the 2-pool, it can be reduced by choosing fundamentally connected assets and appropriate price bounds.
-{% endhint %}
+> **Info:**  
+> For example, if the price of one of the assets drops to a sufficiently low level, the pool will end up with only that least valuable asset (see the figure above). This phenomenon occurs in many multi-asset AMMs, such as the Curve stablecoin 3-pool. Just like strategy risk in the 2-pool, it can be reduced by choosing fundamentally connected assets and appropriate price bounds.
 
 * Note that the pricing region of the 3-CLP is more complex than for other pools; this may mean that arbitrageurs need more time to get familiar with the functioning of the pool before it runs smoothly.
 
@@ -62,9 +60,7 @@ For example, if the price of one of the assets drops to a sufficiently low level
 
 To read about the mathematical specification and implementation, see the below resources
 
-{% content-ref url="../gyd/technical-documents.md" %}
 [technical-documents.md](../gyd/technical-documents.md)
-{% endcontent-ref %}
 
 ## Notes
 

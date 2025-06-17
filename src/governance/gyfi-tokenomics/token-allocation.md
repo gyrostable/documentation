@@ -2,7 +2,7 @@
 
 ####
 
-<figure><img src="../../.gitbook/assets/chart (4).svg" alt=""><figcaption><p>Note: these figures are subject to change and should be considered a guide only. Not financial advice.</p></figcaption></figure>
+<figure><img src="../../assets/chart (4).svg" alt=""><figcaption><p>Note: these figures are subject to change and should be considered a guide only. Not financial advice.</p></figcaption></figure>
 
 #### DAO - 65% of the GYFI supply, as follows:
 

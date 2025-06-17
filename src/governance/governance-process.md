@@ -10,7 +10,7 @@ This page describes the process that should be followed to take an idea to imple
 
 **Step 3:** Final on-chain vote
 
-<figure><img src="../.gitbook/assets/Gov Process v2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../assets/Gov Process v2.png" alt=""><figcaption></figcaption></figure>
 
 ## Step 1 - Consultation
 

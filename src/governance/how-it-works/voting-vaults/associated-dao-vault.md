@@ -1,5 +1,5 @@
 ---
-cover: ../../../.gitbook/assets/Associated DAO vault cover.png
+cover: ../../../assets/Associated DAO vault cover.png
 coverY: 150.60921248142645
 ---
 

@@ -4,17 +4,13 @@ description: Mathematical description and analysis of the Gyroscope implementati
 
 # Technical Documents
 
-
-
 ## DSM
 
-{% embed url="https://github.com/gyrostable/technical-papers/blob/main/P-AMM/P-AMM%20technical%20paper.pdf" %}
-Technical paper describing the DSM mechanism
-{% endembed %}
+[Technical paper describing the DSM mechanism](https://github.com/gyrostable/technical-papers/blob/main/P-AMM/P-AMM%20technical%20paper.pdf)
 
-## Consolidated Price Feed&#x20;
+## Consolidated Price Feed
 
-{% embed url="https://github.com/gyrostable/technical-papers/blob/main/Consolidated%20Price%20Feed%20and%20Circuit%20Breakers/Design%20of%20the%20Consolidated%20Price%20Feed%20and%20Circuit%20Breaker%20System.pdf" %}
+[Design of the Consolidated Price Feed and Circuit Breaker System](https://github.com/gyrostable/technical-papers/blob/main/Consolidated%20Price%20Feed%20and%20Circuit%20Breakers/Design%20of%20the%20Consolidated%20Price%20Feed%20and%20Circuit%20Breaker%20System.pdf)
 
 ## Disclaimer
 

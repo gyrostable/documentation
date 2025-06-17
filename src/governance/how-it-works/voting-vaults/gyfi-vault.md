@@ -1,5 +1,5 @@
 ---
-cover: ../../../.gitbook/assets/GYFI vault cover.png
+cover: ../../../assets/GYFI vault cover.png
 coverY: 0
 ---
 

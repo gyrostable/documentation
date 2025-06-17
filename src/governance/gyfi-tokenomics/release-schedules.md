@@ -2,7 +2,7 @@
 
 Note: amounts on this page should be considered (best effort) approximations and are subject to change. Not financial advice.&#x20;
 
-<figure><img src="../../.gitbook/assets/Insiders unlocked supply (upper bound on circulating supply).svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/Insiders unlocked supply (upper bound on circulating supply).svg" alt=""><figcaption></figcaption></figure>
 
 ## DAO unlock scenarios
 
@@ -20,15 +20,15 @@ Note: amounts are indicative approximations and may vary. Figures do not take in
 
 ### Scenario A
 
-<figure><img src="../../.gitbook/assets/Unlocked supply (upper bound on circulating supply) [Largest circulating supply at launch] (2).svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/Unlocked supply (upper bound on circulating supply) [Largest circulating supply at launch] (2).svg" alt=""><figcaption></figcaption></figure>
 
 ### Scenario B
 
-<figure><img src="../../.gitbook/assets/Unlocked supply (upper bound on circulating supply) [Central Forecast] (3).svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/Unlocked supply (upper bound on circulating supply) [Central Forecast] (3).svg" alt=""><figcaption></figcaption></figure>
 
 ### Scenario C
 
-<figure><img src="../../.gitbook/assets/Unlocked supply (upper bound on circulating supply) [Smallest circulating supply at launch) (2).svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/Unlocked supply (upper bound on circulating supply) [Smallest circulating supply at launch) (2).svg" alt=""><figcaption></figcaption></figure>
 
 Notes:
 

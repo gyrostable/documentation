@@ -18,6 +18,7 @@
     "vuepress-theme-hope": "2.0.0-rc.92"
   },
   "dependencies": {
-    "mathjax": "^3.2.2"
+    "mathjax": "^3.2.2",
+    "mathjax-full": "^3.2.2"
   }
 }

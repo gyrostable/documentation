@@ -6,9 +6,8 @@ description: Methodology and implementation of pricing LP share tokens
 
 To price LP tokens, it is not enough to simply add the values of all assets in the pool as this is easily manipulated. Instead, a more robust procedure is required to calculate LP token values.
 
-{% hint style="info" %}
-The precise instructions on how to calculate LP shares of the 2-CLP, 3-CLP, or E-CLP are available in section 5 of this [technical paper](https://github.com/gyrostable/technical-papers/blob/main/Consolidated%20Price%20Feed%20and%20Circuit%20Breakers/Design%20of%20the%20Consolidated%20Price%20Feed%20and%20Circuit%20Breaker%20System.pdf).&#x20;
-{% endhint %}
+> **Info:**  
+> The precise instructions on how to calculate LP shares of the 2-CLP, 3-CLP, or E-CLP are available in section 5 of this [technical paper](https://github.com/gyrostable/technical-papers/blob/main/Consolidated%20Price%20Feed%20and%20Circuit%20Breakers/Design%20of%20the%20Consolidated%20Price%20Feed%20and%20Circuit%20Breaker%20System.pdf).
 
 ## Example: Constant Product Pools
 
@@ -51,4 +50,4 @@ $$
 
 LP share pricing for the CLPs follows the same general principles and is described in full detail in Section 5 of the following technical paper.
 
-{% embed url="https://github.com/gyrostable/technical-papers/blob/main/Consolidated%20Price%20Feed%20and%20Circuit%20Breakers/Design%20of%20the%20Consolidated%20Price%20Feed%20and%20Circuit%20Breaker%20System.pdf" %}
+[Technical paper: Design of the Consolidated Price Feed and Circuit Breaker System](https://github.com/gyrostable/technical-papers/blob/main/Consolidated%20Price%20Feed%20and%20Circuit%20Breakers/Design%20of%20the%20Consolidated%20Price%20Feed%20and%20Circuit%20Breaker%20System.pdf)

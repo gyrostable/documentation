@@ -16,9 +16,8 @@ The stablecoin system endeavours to keep the vaults to the correct proportions b
 * **Current weights**: the actual/current weight of a vault. For example, if the total USD value of the reserve is 100 USD and one vault contains 35 USD, then the current weight of that vault would be 35%.
 * **Resulting weights**: the weight for each vault that would result if a particular mint or redeem were to occur.
 
-{% hint style="info" %}
-To read current reserve weights you can query[`getReserveState`](https://etherscan.io/address/0x2519A729535470830D345b78109818F94C1c2869#readContract)and reference [`currentWeight`](https://github.com/gyrostable/gyd-core/blob/main/libraries/DataTypes.sol#L99). The current and target reserve weights are also visualized in the UI during the [minting GYD](https://app.gyro.finance/dsm/) process.
-{% endhint %}
+> **Info:**  
+> To read current reserve weights you can query [`getReserveState`](https://etherscan.io/address/0x2519A729535470830D345b78109818F94C1c2869#readContract) and reference [`currentWeight`](https://github.com/gyrostable/gyd-core/blob/main/libraries/DataTypes.sol#L99). The current and target reserve weights are also visualized in the UI during the [minting GYD](https://app.gyro.finance/dsm/) process.
 
 ## Reserve Weight Epsilon
 
@@ -33,7 +32,7 @@ Now, assume that a user wants to mint some Gyro Dollars.
 
 Another type of safety check performed by Gyroscope centres on stablecoins that are in the reserve. For a vault where one of its underlying assets is a stablecoin, during minting a check is performed to ensure that the stablecoin is not off-peg beyond some tolerated margin (say, 0.98-1.02).&#x20;
 
-A mint operation that attempted to deposit an off-peg stablecoin and mint Gyro Dollars could only succeed if the mint did not result in the vault containing the off-peg stablecoin decreasing in weight.&#x20;
+A mint operation that attempted to deposit an off-peg stablecoin and mint Gyro Dollars could only succeed if the mint did not result in the vault containing the off-peg stablecoin decreasing in weight.
 
 
 

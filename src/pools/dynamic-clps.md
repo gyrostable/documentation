@@ -10,15 +10,14 @@ Dynamic pools work with any underlying Gyro CLP and work on Balancer v2 or v3:
 * E-CLPs allow nuanced liquidity profiles in a dynamic form
 * 2-CLPs are the most gas-efficient option
 
-<figure><img src="../.gitbook/assets/Dynamic-Pools-Animation.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../assets/Dynamic-Pools-Animation.gif" alt=""><figcaption></figcaption></figure>
 
 ## Description of Dynamic CLPs
 
 Dynamic CLPs build on top of vanilla CLPs with the use of a dynamic rate provider that allows a pool to track the market as the pool moves out of range and continue to provide liquidity. They are designed in particular for key volatile pairs, such as ETH/BTC/USD and FX pairs and other highly liquid pairs.
 
-{% hint style="info" %}
-A rate provider is a mechanism incorporated into liquidity pools that tells a pool how to scale asset amounts. The pool math then uses the scaled amounts in swap logic. The standard usage of rate providers is to tell the pool how much a given asset can directly be redeemed for an underlying asset (e.g., wstETH can be redeemed directly for stETH).
-{% endhint %}
+> **Info:**  
+> A rate provider is a mechanism incorporated into liquidity pools that tells a pool how to scale asset amounts. The pool math then uses the scaled amounts in swap logic. The standard usage of rate providers is to tell the pool how much a given asset can directly be redeemed for an underlying asset (e.g., wstETH can be redeemed directly for stETH).
 
 The dynamic rate provider is designed to plug into a CLP to enable price ranges to safely adjust over time. It is connected to a price feed but does not automatically reflect the current value of the feed. It normally functions like a constant rate provider, which returns the same stored value. It differs from a constant rate provider by providing an update method by which the stored value can be updated based on the feed. This update is conditional and is designed to avoid arbitrage loss / MEV exposure to LPers in the update.
 
@@ -26,7 +25,7 @@ The feed for a dynamic rate provider will typically be a Chainlink feed, but it 
 
 The stored value of a dynamic rate provider can only be updated when the linked pool is out of range, and then the rate is updated such that the pool is just at the respective edge of its price range. In this case, LPers do not incur an arbitrage loss through the update.
 
-<figure><img src="../.gitbook/assets/Dynamic-Pools-Explainer-v5.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../assets/Dynamic-Pools-Explainer-v5.gif" alt=""><figcaption></figcaption></figure>
 
 ## Keeper role
 
@@ -73,4 +72,4 @@ Dynamic CLPs were designed to be well-suited for particular types of dynamic str
 * Calibrations should aim to achieve the best volatility harvesting effects. FTL Labs believes that wide range, high fee strategies that maintain the pool invariant property at most times is the best direction for this. An effect is that liquidity updates should be expected to be relatively rare and eventually be followed by the pool settling into a new wide range that can likely last for an extended period.
 * Shifting liquidity without rebalancing assets in the pool. Rebalancing by trading is particularly costly for LPs, and costs add up if a strategy requires regularly trading half of the pool’s TVL. Dynamic CLPs shift liquidity without requiring rebalancing trades in the pool.
 
-To achieve this, pool calibrations should consider measures of expected medium-term volatility for asset pairs. Separately, the calibration should also consider the sensitivity of the information coming from the linked price feed to be sure that liquidity updates are unlikely to trigger arbitrage opportunities (e.g., the swap fee should be more than the error size of the oracle price).\
+To achieve this, pool calibrations should consider measures of expected medium-term volatility for asset pairs. Separately, the calibration should also consider the sensitivity of the information coming from the linked price feed to be sure that liquidity updates are unlikely to trigger arbitrage opportunities (e.g., the swap fee should be more than the error size of the oracle price).

@@ -1,5 +1,5 @@
 ---
-cover: ../../../.gitbook/assets/Liquidity Providers vault cover (1).png
+cover: ../../../assets/Liquidity Providers vault cover (1).png
 coverY: 0
 ---
 

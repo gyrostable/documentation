@@ -27,18 +27,7 @@ Only some GYD pools are eligible to participate in such reserve yield emissions 
 
 See below for details on how exactly the yield to pools is computed and emitted.
 
-{% content-ref url="yield-emission-process.md" %}
-[yield-emission-process.md](yield-emission-process.md)
-{% endcontent-ref %}
-
-{% content-ref url="security.md" %}
-[security.md](security.md)
-{% endcontent-ref %}
-
-{% content-ref url="audit-report.md" %}
-[audit-report.md](audit-report.md)
-{% endcontent-ref %}
-
-{% content-ref url="sgyd-internals.md" %}
-[sgyd-internals.md](sgyd-internals.md)
-{% endcontent-ref %}
+- [yield-emission-process.md](yield-emission-process.md)
+- [security.md](security.md)
+- [audit-report.md](audit-report.md)
+- [sgyd-internals.md](sgyd-internals.md)
