@@ -2,7 +2,7 @@
 description: Methodology and implementation of pricing LP share tokens
 ---
 
-# LP share pricing
+## LP share pricing
 
 To price LP tokens, it is not enough to simply add the values of all assets in the pool as this is easily manipulated. Instead, a more robust procedure is required to calculate LP token values.
 
@@ -10,7 +10,7 @@ To price LP tokens, it is not enough to simply add the values of all assets in t
 The precise instructions on how to calculate LP shares of the 2-CLP, 3-CLP, or E-CLP are available in section 5 of this [technical paper](https://github.com/gyrostable/technical-papers/blob/main/Consolidated%20Price%20Feed%20and%20Circuit%20Breakers/Design%20of%20the%20Consolidated%20Price%20Feed%20and%20Circuit%20Breaker%20System.pdf).
 :::
 
-## Example: Constant Product Pools
+### Example: Constant Product Pools
 
 This example demonstrates the principles of robust LP share pricing applied to constant product pools.
 

@@ -1,4 +1,4 @@
-# Protocol fees
+## Protocol fees
 
 The Gyroscope protocol is designed with various protocol fee options that may accrue value to the protocol. These include, protocol fees on CLPs, mint/redeem fees for GYD, and yield accrued from reserve assets.
 

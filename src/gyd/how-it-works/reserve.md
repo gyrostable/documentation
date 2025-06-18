@@ -2,9 +2,9 @@
 description: Stratifying reserve assets to build resilience
 ---
 
-# Reserve design
+## Reserve design
 
-## Design philosophy
+### Design philosophy
 
 The Gyroscope reserve is designed to maximize the resilience of the stablecoin system. This requires that risks are 'stratified', or isolated from each other. Losses that accrue in one sub-system should never spill over into other connected sub-systems.
 
@@ -21,7 +21,7 @@ There are two forms of Gyroscope reserves currently:
 
 In the early growth phase, most reserves are held in AMOs to facilitate growth and liquidity. AMOs can be transitioned into DSM reserves as GYD scales with a balancing level in AMOs.
 
-## Functional implementation
+### Functional implementation
 
 In order to stratify risks, the Gyroscope reserve is separated into lower-level vaults (circles in the figure below). This design is aimed at ensuring that risks are contained within each vault, with little overlap of asset configurations between the vaults.
 
@@ -45,7 +45,7 @@ The reserve structure is able to evolve over time as the on-chain asset space ev
 
 <figure><img src="../../assets/image (3).png" alt=""><figcaption><p>A hypothetical future reserve structure for the purpose of illustrating reserve stratification principles.</p></figcaption></figure>
 
-## Technical implementation
+### Technical implementation
 
 The reserve is implemented as a series of vaults that are designed for risk stratification. Each vault deploys assets according to a strategy decided by decentralized governance. The first vault strategy is deploying assets into Gyroscope's [Concentrated Liquidity Pools](../../pools/concentrated-liquidity-pools.md) (CLPs). This is the only strategy implemented at the moment.
 

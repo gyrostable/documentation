@@ -2,7 +2,7 @@
 description: The Gyroscope Protocol Documentation
 ---
 
-# Overview
+## Overview
 
 This documentation describes theoretical design mechanisms for the Gyroscope protocol as formulated by FTL Labs through academic research and development. The Gyro DAO is responsible for launching Gyroscope and deciding over which mechanisms to incorporate into the final design.&#x20;
 
@@ -13,7 +13,7 @@ If there is anything unclear or out of date, please submit a pull request to the
 [Chinese](https://darktu.gitbook.io/gyroscope/) | [Spanish](https://jbaron.gitbook.io/gyroscope/informacion-general/introduccion) | [Russian](https://glebsh111.gitbook.io/gyroscope-protocol/obzor-gyroscope/vvedenie) | [Japanese](https://mozuku.gitbook.io/jairosukpupurotokoru/) | other
 :::
 
-## The Gyroscope stablecoin protocol
+### The Gyroscope stablecoin protocol
 
 Gyroscope's mission is to build robust public infrastructure for DeFi. A central piece is a fully-backed stablecoin designed to be superliquid and all-weather:
 

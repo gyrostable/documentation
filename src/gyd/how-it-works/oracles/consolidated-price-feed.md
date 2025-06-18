@@ -1,6 +1,8 @@
-# Consolidated price feed
+## Consolidated price feed
 
-{% embed url="https://www.youtube.com/watch?v=jPmPbnYT07A" %}
+<VidStack
+  src="https://www.youtube.com/watch?v=jPmPbnYT07A"
+/>
 
 ## **Introduction**
 

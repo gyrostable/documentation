@@ -2,7 +2,7 @@
 description: Intuition behind autonomous price-stability mechanism
 ---
 
-# Economic intuition
+## Economic intuition
 
 ## Overview <a href="#e55d" id="e55d"></a>
 

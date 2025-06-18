@@ -2,7 +2,7 @@
 description: Concentrating liquidity within price bounds defined by the DSM
 ---
 
-# GYD Trading Pools
+## GYD Trading Pools
 
 ## Overview
 

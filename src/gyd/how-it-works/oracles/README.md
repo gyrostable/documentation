@@ -4,7 +4,7 @@ description: >-
   Gyroscope
 ---
 
-# Oracles & price feeds
+## Oracles & price feeds
 
 ### Overview
 

@@ -1,6 +1,6 @@
-# Reserve Safety Checks
+## Reserve Safety Checks
 
-## The Basics
+### The Basics
 
 The Gyroscope Reserve is comprised of a set of vaults. When a user mints, the tokens they use to mint are transferred to the relevant vault(s), with the user receiving Gyro Dollars in return. When a user redeems, the selected number of Gyro Dollar units are burned in exchange for vault tokens.
 
@@ -8,7 +8,7 @@ To ensure that the Gyroscope Reserve remains diversified, each vault is given a 
 
 This page describes in detail how these vault weights are enforced.&#x20;
 
-## Reserve Weights
+### Reserve Weights
 
 The stablecoin system endeavours to keep the vaults to the correct proportions by keeping track of a number of different 'weights'.
 
@@ -20,7 +20,7 @@ The stablecoin system endeavours to keep the vaults to the correct proportions b
 To read current reserve weights you can query [`getReserveState`](https://etherscan.io/address/0x2519A729535470830D345b78109818F94C1c2869#readContract) and reference [`currentWeight`](https://github.com/gyrostable/gyd-core/blob/main/libraries/DataTypes.sol#L99). The current and target reserve weights are also visualized in the UI during the [minting GYD](https://app.gyro.finance/dsm/) process.
 :::
 
-## Reserve Weight Epsilon
+### Reserve Weight Epsilon
 
 Each vault is permitted to deviate from the ideal weight by a percentage. For example, for a vault with an ideal weight of 20% may be allowed to vary by 10% from that ideal weight (so +/- 2% of the total reserve value). This permitted variation is what we call **epsilon**.
 
@@ -29,7 +29,7 @@ Now, assume that a user wants to mint some Gyro Dollars.
 * If the resulting weights from the mint would be such that they are within epsilon of the ideal weights, then the mint would be considered safe;
 * If one or more of the resulting weights would be outside of epsilon, then the operation would only be considered safe if the resulting weight would be closer to the ideal weight than the current weight is closer to the ideal. In other words, if the operation promotes the rebalancing of the vault back towards the ideal weight.&#x20;
 
-## Stablecoin Deviations from Peg
+### Stablecoin Deviations from Peg
 
 Another type of safety check performed by Gyroscope centres on stablecoins that are in the reserve. For a vault where one of its underlying assets is a stablecoin, during minting a check is performed to ensure that the stablecoin is not off-peg beyond some tolerated margin (say, 0.98-1.02).&#x20;
 

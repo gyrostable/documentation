@@ -4,7 +4,7 @@ description: >-
   risks
 ---
 
-# Dynamic Stability Mechanism
+## Dynamic Stability Mechanism
 
 [DSM overview video](https://youtu.be/Gmxm2ij8MSI?si=z0dUIJBCtWb_qqvP)
 

@@ -2,17 +2,17 @@
 description: An overview of possible risks of using GYD
 ---
 
-# Risks
+## Risks
 
 Gyro Dollars (GYD) is launched in a mainnet beta stage. While it is launched with a functional decentralized governance, it is intended to be observed over a 3-6 month period in a setting with additional centralized guard rails before full decentralization occurs.
 
-## Upgradeability of GYD contracts
+### Upgradeability of GYD contracts
 
 While the contracts have been audited several times and a prototype version (p-GYD) has been in production for 10 months, the risk of code bugs cannot be fully mitigated. As such, it is important that both the community and the development team at FTL Labs, who was [mandated](https://snapshot.org/#/gyrodao.eth/proposal/QmeMYwoCCEhSk8E7BNshU2XeSD91RVdLrkkv3mSV2EApTe) to deliver v1 of the protocol, are able to quickly address smart contract issues that may be found. For this reason, a centralized control multisig will temporarily retain control of the system parameters and protocol update and design decisions in parallel with decentralized governance. This multisig is led by the Gyroscope Foundation, a foundation company associated with Gyroscope governance.
 
 Following the full decentralization, this centralized control vector will be removed, and further updates to Gyroscope contracts will have to be enacted by Gyroscope governance. This is fundamentally important to launching Gyroscope as a decentralized protocol.
 
-## Risks of using GYD
+### Risks of using GYD
 
 Using GYD also comes with certain risks, including the following:
 
@@ -26,5 +26,3 @@ Using GYD also comes with certain risks, including the following:
 * **UI and blockchain interaction risks**: When a user interacts with the Gyroscope system through the Gyroscope web UI, they are exposed to technical risks. While the Gyroscope UI has been carefully reviewed to avoid bugs and vulnerabilities, these cannot be completely excluded. A UI bug may lead to an incorrect transaction being generated, or the UI may become unavailable. A user’s own IT setups (e.g., web browser, wallet software) may further contain bugs and vulnerabilities.
 
 Any of the above risks can lead to a partial or complete loss of the user’s assets.
-
-\

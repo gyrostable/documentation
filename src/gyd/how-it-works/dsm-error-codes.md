@@ -2,7 +2,7 @@
 description: Key error codes of the Gyro Proto DSM
 ---
 
-# DSM error codes
+## DSM error codes
 
 #### 2: Too much slippage <a href="#2" id="2"></a>
 

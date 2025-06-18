@@ -2,9 +2,7 @@
 description: Additional mechanisms that complement primary stability mechanisms
 ---
 
-# Complementary stability mechanisms
-
-## Complementary stability mechanisms <a href="#a8bb" id="a8bb"></a>
+### Complementary stability mechanisms <a href="#a8bb" id="a8bb"></a>
 
 Gyroscope also incorporates several complementary stability mechanisms, which work together with the core Gyroscope mechanisms to strengthen stability.
 

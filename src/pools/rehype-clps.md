@@ -4,7 +4,7 @@ description: >-
   concentrated liquidity with auto-rehypothecation to lending markets.
 ---
 
-# Rehype E-CLPs
+## Rehype E-CLPs
 
 <figure><img src="../assets/Boosted-E-CLPs.gif" alt=""><figcaption><p>Rehype pools combine several yield sources into a single pool.</p></figcaption></figure>
 
