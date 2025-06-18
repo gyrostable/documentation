@@ -1,4 +1,13 @@
-# tldr: What is Gyroscope
+---
+title: What is Gyroscope
+---
+
+## Disclaimer
+
+These documents are for general information purposes only. They does not constitute investment advice or a recommendation or solicitation to buy or sell any investment and should not be used in the evaluation of the merits of making any investment decision. They should not be relied upon for accounting, legal or tax advice or investment recommendations. These papers may contain experimental code and technical designs that may not be ready for general use. These papers reflects the current opinions of the authors and is not made on behalf of Superluminal Labs or its affiliates and does not necessarily reflect the opinions of Superluminal Labs, its affiliates or individuals associated with Superluminal Labs. The opinions reflected herein are subject to change without being updated.
+
+
+## What is Gyroscope?
 
 Gyroscope is a non-custodial liquidity engine that combines more efficient passive concentrated liquidity and stablecoin yield.
 
@@ -42,3 +51,5 @@ GYD and E-CLPs together aim to achieve:
 Longer term, LP positions in LST E-CLPs could be integrated into a leverage mechanism for GYD. This would allow GYD to be borrowed against the highly efficient yield-bearing collateral type arising from E-CLPs.
 
 Lastly, GYD is launched with a special AMO pools, implemented at the protocol level, which help to bootstrap GYD liquidity in early stages and new markets. The bootstrapping pool provides a pre-set amount of GYD that can be issued against yield-bearing stablecoins as a reserve asset by swapping through the pool. This is provided as a more straightforward alternative to minting directly against reserve assets, which is a complex process expected to be undertaken by sophisticated market makers in the future.
+
+

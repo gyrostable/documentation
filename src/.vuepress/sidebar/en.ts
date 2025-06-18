@@ -2,7 +2,7 @@ import { sidebar } from "vuepress-theme-hope";
 
 export const enSidebar = sidebar({
   "/": [
-    { text: "tldr: What is Gyroscope", link: "/tldr", icon: "", collapsible: false },
+    { text: "What is Gyroscope?", link: "/tldr", icon: "", collapsible: false },
     { text: "Audit Reports", link: "/audit-reports.md", icon: "", collapsible: false },
     {
       text: "Pools",
@@ -29,12 +29,15 @@ export const enSidebar = sidebar({
           link: "/governance/how-it-works/README.md",
           collapsible: true,
           children: [
-            { text: "Voting Vaults", link: "/governance/how-it-works/voting-vaults/README.md" },
-            { text: "The Founding Member Vault", link: "/governance/how-it-works/voting-vaults/the-founding-member-vault.md" },
-            { text: "Councillor Vault", link: "/governance/how-it-works/voting-vaults/councillor-vault.md" },
-            { text: "Associated DAO Vault", link: "/governance/how-it-works/voting-vaults/associated-dao-vault.md" },
-            { text: "GYD LP Vault", link: "/governance/how-it-works/voting-vaults/gyd-lp-vault.md" },
-            { text: "GYFI Vault", link: "/governance/how-it-works/voting-vaults/gyfi-vault.md" },
+            { text: "Voting Vaults", link: "/governance/how-it-works/voting-vaults/README.md", collapsible: true, children: 
+              [
+                    { text: "The Founding Member Vault", link: "/governance/how-it-works/voting-vaults/the-founding-member-vault.md" },
+                    { text: "Councillor Vault", link: "/governance/how-it-works/voting-vaults/councillor-vault.md" },
+                    { text: "Associated DAO Vault", link: "/governance/how-it-works/voting-vaults/associated-dao-vault.md" },
+                    { text: "GYD LP Vault", link: "/governance/how-it-works/voting-vaults/gyd-lp-vault.md" },
+                    { text: "GYFI Vault", link: "/governance/how-it-works/voting-vaults/gyfi-vault.md" },
+                  ],
+            },
             { text: "Action Tiering", link: "/governance/how-it-works/action-tiering.md" },
             { text: "On-chain proposals", link: "/governance/how-it-works/on-chain-proposals.md" },
             { text: "Vote delegation", link: "/governance/how-it-works/vote-delegation.md" },

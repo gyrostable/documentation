@@ -2,9 +2,7 @@
 description: Elliptic Liquidity Pools or E-CLPs for asymmetric concentrated liquidity
 ---
 
-# E-CLPs
-
-## Description of E-CLPs
+## E-CLPs
 
 **Elliptic CLPs, or E-CLPs, allow trading along the curve of an ellipse. E-CLPs will be used for stablecoin pools that include the Gyroscope stablecoin, GYD.**
 
@@ -16,7 +14,7 @@ E-CLPs will be used for GYD trading markets, which are pools that pair GYD again
 By performing different manipulations on a circle, the E-CLP can be calibrated to different use-cases. The main use-cases are listed below with colloquial explanations:  
 
 * Symmetric stretch: price-bounded ‘StableSwap’ [1]  
-* Asymmetric stretch: high liquidity at 1$, with residual liquidity at other prices  
+* Asymmetric stretch: high liquidity at 1 USD, with residual liquidity at other prices  
 * Constant circle: alternative to constant product concentrated liquidity
 :::
 
@@ -81,7 +79,7 @@ One facet of adverse selection risk for any AMM pool, including CLPs: LPs who jo
 
 All of the most important functions are defined in the file GyroECLPMath.sol and listed in the below table.
 
-<table><thead><tr><th width="374">Function</th><th>Purpose</th><th data-hidden></th></tr></thead><tbody><tr><td>calculateInvariant</td><td>(Re-)computes the invariant r from the current reserves t = (x, y)</td><td></td></tr><tr><td>calcOutGivenIn </td><td>Computes the amount that leaves the pool when a certain amount enters it, after fees.</td><td></td></tr><tr><td>calcInGivenOut</td><td>Computes the amount that needs to enter the pool when a certain amount should leave it, after fees. </td><td></td></tr><tr><td>calcXGivenY</td><td>Computes the amount of asset x given a certain amount of asset y and a certain invariant. Used by calcOutGivenIn and calcInGivenOut. </td><td></td></tr><tr><td>calcYGivenX</td><td>The same functionality for y given x. </td><td></td></tr><tr><td>liquidityInvariantUpdate</td><td>New invariant when liquidity is added/removed in a “balanced” fashion (without affecting the price). This avoids fully re-calculation of the invariant.</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="374">Function</th><th>Purpose</th></tr></thead><tbody><tr><td>calculateInvariant</td><td>(Re-)computes the invariant r from the current reserves t = (x, y)</td></tr><tr><td>calcOutGivenIn </td><td>Computes the amount that leaves the pool when a certain amount enters it, after fees.</td></tr><tr><td>calcInGivenOut</td><td>Computes the amount that needs to enter the pool when a certain amount should leave it, after fees. </td></tr><tr><td>calcXGivenY</td><td>Computes the amount of asset x given a certain amount of asset y and a certain invariant. Used by calcOutGivenIn and calcInGivenOut. </td></tr><tr><td>calcYGivenX</td><td>The same functionality for y given x. </td></tr><tr><td>liquidityInvariantUpdate</td><td>New invariant when liquidity is added/removed in a “balanced” fashion (without affecting the price). This avoids fully re-calculation of the invariant.</td></tr></tbody></table>
 
 Conceptually, the ‘ellipse’ function is derived from transforming a circle with stretch, rotation, and displacement. The E-CLP invariant can be described as the minor radius (also known as the “semi-minor axis”) of the ellipse.
 
@@ -93,16 +91,16 @@ To read about the mathematical specification and implementation, see the below r
 
 In order to retrieve information about an individual E-CLP calibration, it is possible to query getECLPParams, which returns two tuples.
 
-* The first tuple returns int256 (signed) values for: alpha, beta, c, s, lambda
-* The second tuple is the output of an off-chain computation that is based on the first tuple and can be referenced/ proven if desired. This tuple contains auxiliary variables used in high-precision calculations, in order: tauAlpha, taubBeta, u, v, w, z, d^2.
+* The first tuple returns int256 (signed) values for: $\alpha$, $\beta$, $c$, $s$, $\lambda$
+* The second tuple is the output of an off-chain computation that is based on the first tuple and can be referenced/ proven if desired. This tuple contains auxiliary variables used in high-precision calculations, in order: tauAlpha, taubBeta, $u$, $v$, $w$, $z$, $d^2$.
 
 The various parameter values can be understood as follows:
 
-* α (alpha) defines the lower bound of the price range
-* β (beta) defines the upper bound of the price range
-* c, s define the rotation point and are further defined by the cosine (respectively sine) of the rotation angle.
+* $\alpha$ defines the lower bound of the price range
+* $\beta$ defines the upper bound of the price range
+* $c$, $s$ define the rotation point and are further defined by the cosine (respectively sine) of the rotation angle.
 * The price of maximum liquidity is the quotient s/c (which is also the tangent of the rotation angle).
-* λ (lambda) defines the stretching factor. The higher λ, the more liquidity is concentrated within the price range. For lower λ, the pool’s liquidity is more evenly spread across the price range. Geometrically, a higher λ means that the ellipse is more elongated, with λ = 1 corresponding to a circle.
+* $\lambda$ defines the stretching factor. The higher λ, the more liquidity is concentrated within the price range. For lower $\lambda$, the pool’s liquidity is more evenly spread across the price range. Geometrically, a higher $\lambda$ means that the ellipse is more elongated, with $\lambda = 1$ corresponding to a circle.
 
 <figure><img src="https://lh7-us.googleusercontent.com/7Mvl_CtmYuy9WFjhKT7TsXZvpNowu2tJRJ7-kCdeZvvPhuPnt5Iyr5S1afs_R04MVUe5x2ghEQJ22YJhDLYKTMAQ6z-K0QxnrTL4S2Gt3uK-UuICiqgbhND3C3JnGVb123hKuJrbKZwv-8dfxB9WN6I" alt=""><figcaption><p>Intuition on E-CLP construction</p></figcaption></figure>
 

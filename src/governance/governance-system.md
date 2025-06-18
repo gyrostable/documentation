@@ -86,7 +86,7 @@ The main idea is to let the user market decide when the system should be more up
 
 We track the moving average of the share of wGYD to GYD in terms of an irregularly-spaced exponential moving average (EMA) as follows. Index the points in time where the EMA is updated by $i$, where $i=0$ marks deployment of the contract. Let $t_i$ be the block height at time index i, and let $x_i := \text{wGYD supply}/\text{GYD supply}$ at the end of block $t_i$. Let $y_i$ be the EMA at time index $i$. We can define the EMA as
 
-$$
+$
 \begin{align*}
 y_0 &= 0
 \\
@@ -94,7 +94,7 @@ y_{i} &= y_{i-1} + K_i \cdot (x_i - y_{i-1}) \quad\text{if $i > 0$}
 \\
 \text{where } K_i &= 1 - e^{-(t_{i} - t_{i-1}) / \tau}.
 \end{align*}
-$$
+$
 
 Here, $\tau$ is a constant (i.e., a parameter to the contract) that is usually interpreted as the width of a time window. Observe that, if the spacing of the $x_i$ time series was regular, then all the $K_i$ would be equal, but in our case, this does not hold. The definition of $K_i$ is motivated by the continuous form of the EMA from signal processing, see [here](https://stackoverflow.com/a/1027808/266614).
 

@@ -1,4 +1,4 @@
-# Audit Reports
+## Audit Reports
 
 The GYD system was audited 4 times: twice by Nethermind and once each by Runtime Verification and Trail of Bits.
 

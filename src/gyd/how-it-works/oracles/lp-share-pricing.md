@@ -16,34 +16,34 @@ This example demonstrates the principles of robust LP share pricing applied to c
 
 For a given constant product Balancer pool containing assets 1, ..., n, define the following:
 
-$$
+$
 w_i = \text{weight of asset } i \\
 r_i = \text{amount (in \# tokens) of asset } i \\
 p_i = \text{price of asset } i \\
 S = \text{total \# LP tokens}
-$$
+$
 
 The constant product invariant of the pool is
 
-$$
+$
 L = \prod_{i=1}^{n} r_i^{w_i}
-$$
+$
 
-Note that the amounts $$r_i$$are easily manipulatable through swaps, but the product $$L$$is not. And, as we require asset pricing oracles elsewhere, we can presume that the prices $$p_i$$ are also not easily manipulatable (controls to assure against this will be discussed elsewhere).
+Note that the amounts $r_i$are easily manipulatable through swaps, but the product $L$is not. And, as we require asset pricing oracles elsewhere, we can presume that the prices $p_i$ are also not easily manipulatable (controls to assure against this will be discussed elsewhere).
 
-To calculate a manipulation-resistant LP token price, it will be enough to express the pricing of LP tokens solely in terms of manipulation-resistant variables $$w_i, p_i, L / S$$. Note that while $$L$$ and $$S$$ are individually manipulatable by adding or removing liquidity, $$L/S$$ is not easily manipulatable as long as proper accounting methods are in place for handling adding and removing of liquidity (see Section 5.5 in the [technical paper](https://github.com/gyrostable/technical-papers/blob/main/Consolidated%20Price%20Feed%20and%20Circuit%20Breakers/Design%20of%20the%20Consolidated%20Price%20Feed%20and%20Circuit%20Breaker%20System.pdf) for more details).
+To calculate a manipulation-resistant LP token price, it will be enough to express the pricing of LP tokens solely in terms of manipulation-resistant variables $w_i, p_i, L / S$. Note that while $L$ and $S$ are individually manipulatable by adding or removing liquidity, $L/S$ is not easily manipulatable as long as proper accounting methods are in place for handling adding and removing of liquidity (see Section 5.5 in the [technical paper](https://github.com/gyrostable/technical-papers/blob/main/Consolidated%20Price%20Feed%20and%20Circuit%20Breakers/Design%20of%20the%20Consolidated%20Price%20Feed%20and%20Circuit%20Breaker%20System.pdf) for more details).
 
 The portfolio value of the entire pool can be calculated as
 
-$$
+$
 \text{Pool value} = L \prod_{i=1}^n \left( \frac{p_i}{w_i} \right)^{w_i}
-$$
+$
 
 **In turn, the LP token price can be calculated in terms of manipulation-resistant variables as**
 
-$$
+$
 p_{\text{LP token}} = \frac{\text{Pool value}}{S} = \frac{L}{S} \prod_{i=1}^n \left( \frac{p_i}{w_i} \right)^{w_i}
-$$
+$
 
 
 

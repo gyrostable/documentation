@@ -2,7 +2,7 @@
 description: Pools that adjust liquidity to market conditions, designed for volatile pairs
 ---
 
-# Dynamic CLPs
+## Dynamic CLPs
 
 Dynamic pools work with any underlying Gyro CLP and work on Balancer v2 or v3:
 

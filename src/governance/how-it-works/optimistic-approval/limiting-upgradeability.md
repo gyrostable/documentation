@@ -16,15 +16,15 @@ The main idea is to let the end-user decide when the system should be more upgra
 
 **Tracking the Moving Average**
 
-We track the moving average of the share of bGYD to GYD in terms of an irregularly-spaced exponential moving average (EMA) as follows. Index the points in time where the EMA is updated by $$i$$, where $$i=0$$ marks deployment of the contract. Let $$t_i$$be the block height at time index $$i$$, and let $$x_i := \text{bGYD supply}/\text{GYD supply}$$ at the end of block $$t_i$$. Let $$y_i$$be the EMA at time index $$i$$. We can define the EMA as
+We track the moving average of the share of bGYD to GYD in terms of an irregularly-spaced exponential moving average (EMA) as follows. Index the points in time where the EMA is updated by $i$, where $i=0$ marks deployment of the contract. Let $t_i$be the block height at time index $i$, and let $x_i := \text{bGYD supply}/\text{GYD supply}$ at the end of block $t_i$. Let $y_i$be the EMA at time index $i$. We can define the EMA as
 
-$$
+$
 \begin{align*} y_0 &= 0 \\ y_{i} &= y_{i-1} + K_i \cdot (x_i - y_{i-1}) \quad\text{if $i > 0$} \\ \text{where } K_i &= 1 - e^{-(t_{i} - t_{i-1}) / \tau}. \end{align*}
-$$
+$
 
-Here, $$\tau$$ is a constant (i.e., a parameter to the contract) that is usually interpreted as the width of a time window. Observe that, if the spacing of the $$x_i$$ time series was regular, then all the $$K_i$$ would be equal, but in our case, this does not hold. The definition of $$K_i$$ is motivated by the continuous form of the EMA from signal processing, see [here](https://stackoverflow.com/a/1027808/266614).
+Here, $\tau$ is a constant (i.e., a parameter to the contract) that is usually interpreted as the width of a time window. Observe that, if the spacing of the $x_i$ time series was regular, then all the $K_i$ would be equal, but in our case, this does not hold. The definition of $K_i$ is motivated by the continuous form of the EMA from signal processing, see [here](https://stackoverflow.com/a/1027808/266614).
 
-Note that we only track the EMA at the _previously updated block_, not the current block. This is to prevent manipulation of the EMA by, e.g., using a flash loan. The values $$x_i$$ and $$t_i$$ in the above formulas therefore refer to the most recently-observed values that are not from the current block; the current-block values are not used to update the current-block EMA, but will only be used in the next block.
+Note that we only track the EMA at the _previously updated block_, not the current block. This is to prevent manipulation of the EMA by, e.g., using a flash loan. The values $x_i$ and $t_i$ in the above formulas therefore refer to the most recently-observed values that are not from the current block; the current-block values are not used to update the current-block EMA, but will only be used in the next block.
 
 The variables in `_updateEMA()` match the variables from the formulas above as follows:
 

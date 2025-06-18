@@ -46,7 +46,7 @@ The joint structure of these checks forms a web among asset pairs, grounded by c
 
 The relative price check is done by observing DEX markets.&#x20;
 
-For a given DEX TWAP relative price $$p_{i/j}$$ the check verifies that the relative price when computed by relying on data from Chainlink, $$\frac{p_{i/\text{USD}}}{\hat p_{j/\text{USD}}}$$, is sufficiently close.&#x20;
+For a given DEX TWAP relative price $p_{i/j}$ the check verifies that the relative price when computed by relying on data from Chainlink, $\frac{p_{i/\text{USD}}}{\hat p_{j/\text{USD}}}$, is sufficiently close.&#x20;
 
 Since all information is observable on-chain, no trust assumptions are required for conducting relative price checks.
 
@@ -61,7 +61,7 @@ For further information, refer to the [Technical Specification](https://github.c
 
 The absolute price check is done by checking the USD denominated price of an asset for consistency with several independent data sources.&#x20;
 
-The absolute price check takes as input ETH/USD prices and ETH/stablecoin prices. For a given asset $$i$$ the check passes if the median of ETH/USD prices taken together with the second lowest ETH/stablecoin prices is sufficiently close to the comparable price as inferred from price\_{$$i$$/ETH}, price\_{$$i$$/USD}.
+The absolute price check takes as input ETH/USD prices and ETH/stablecoin prices. For a given asset $i$ the check passes if the median of ETH/USD prices taken together with the second lowest ETH/stablecoin prices is sufficiently close to the comparable price as inferred from price\_{$i$/ETH}, price\_{$i$/USD}.
 
 Since the USD price is not available on-chain, but is provided by external actors, the absolute price check relies on a trust minimization approach.
 

@@ -27,7 +27,9 @@ Since the system is on Ethereum mainnet, it's permissionless: anyone can get inv
 
 This documentation will help you get started!
 
-[Governance overview video](https://www.youtube.com/watch?v=sS5JNlp4B90)
+<VidStack
+  src="https://www.youtube.com/watch?v=sS5JNlp4B90"
+/>
 
 ## Who governs?
 

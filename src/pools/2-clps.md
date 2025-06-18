@@ -6,15 +6,15 @@ description: Quadratic-Concentrated Liquidity Pools or 2-CLPs
 
 ## Description of 2-CLPs
 
-**Gyroscope’s 2-CLPs are AMMs that concentrate liquidity within a pricing range.** A given 2-CLP is parameterized by the pricing range \[α,β] and the two assets in the pool [\[1\]](2-clps.md#notes).
+**Gyroscope’s 2-CLPs are AMMs that concentrate liquidity within a pricing range.** A given 2-CLP is parameterized by the pricing range $[α,β]$ and the two assets in the pool [\[1\]](2-clps.md#notes).
 
-Given quantities of real reserves (x,y) in the pool and the pool’s pricing range \[α,β], offsets a and b can be calculated [\[2\]](2-clps.md#notes). These offsets describe the amount the pool adds to real reserves to form the virtual reserves that achieve the pricing range. These pools use the following invariant: (x + a)(y + b) = L^2.
+Given quantities of real reserves $(x,y)$ in the pool and the pool’s pricing range \[α,β], offsets a and b can be calculated [\[2\]](2-clps.md#notes). These offsets describe the amount the pool adds to real reserves to form the virtual reserves that achieve the pricing range. These pools use the following invariant: $(x + a)(y + b) = L^2$.
 
 **2-CLPs can also be represented visually.** The conceptual graphic below shows a constant product curve without concentrated liquidity where two price bounds are depicted as blue rectangles. A 2-CLP can be understood as “zooming into” the part of the curve between the price bounds. Here, the curve is substantially ‘flatter’ with trades having less price impact. Further documentation is available here.
 
 <figure><img src="https://lh3.googleusercontent.com/HiTLnGO8aQoWhypPUi87DmLyJCBsbL2ra71HxO98w2JVsPV1-ZoPKYlp9zskMvxrnHWes5e4RzNhFnDEPgl5eX_NmzvCm88Xq4AO5rm_C6sTnj0YiHevV-d5Sgb-_n1xxFBe4LEBFYtDTAsBfAK6dv8" alt="conceptual graphic showing liquidity concentration of 2-CLPs"><figcaption><p>conceptual graphic showing liquidity concentration of 2-CLPs</p></figcaption></figure>
 
-**Compared with “x \* y = k” (i.e., constant product or Uniswap v2) AMMs, a 2-CLP can better utilize the existing liquidity.** Instead of spreading liquidity across the entire range of prices that could in theory occur - ‘from zero to infinity’ - _a 2-CLP focuses on a small range of prices by adding price bounds_ which are implemented using ‘virtual reserves’. Virtual reserves can be understood as the reserves that would be necessary to reach the depth of a concentrated liquidity position using a standard unlimited range pool.
+**Compared with $xy = k$ (i.e., constant product or Uniswap v2) AMMs, a 2-CLP can better utilize the existing liquidity.** Instead of spreading liquidity across the entire range of prices that could in theory occur - ‘from zero to infinity’ - _a 2-CLP focuses on a small range of prices by adding price bounds_ which are implemented using ‘virtual reserves’. Virtual reserves can be understood as the reserves that would be necessary to reach the depth of a concentrated liquidity position using a standard unlimited range pool.
 
 <figure><img src="../assets/2-clp-v2 (1) (2).gif" alt="Stylized representation of capital efficiency gains of 2-CLPs"><figcaption><p>Stylized representation of capital efficiency gains of 2-CLPs</p></figcaption></figure>
 
@@ -60,15 +60,14 @@ One facet of adverse selection risk for any AMM pool, including CLPs: LPs who jo
 
 ## Technical Specification
 
-To read about the mathematical specification and implementation, see the below resources
+To read about the mathematical specification and implementation, see [here](../gyd/technical-documents.md).
 
-[technical-documents.md](../gyd/technical-documents.md)
 
 ## Notes
 
-\[1] For technical reasons, the parameters provided to the smart contract are $$\sqrt{\alpha}$$ and $$\sqrt{\beta}$$ instead of α and β directly.
+\[1] For technical reasons, the parameters provided to the smart contract are $\sqrt{\alpha}$ and $\sqrt{\beta}$ instead of α and β directly.
 
-\[2] The offsets are computed as $$a = L / \sqrt{\beta}$$, $$b = L \sqrt{\alpha}$$
+\[2] The offsets are computed as $a = L / \sqrt{\beta}$, $b = L \sqrt{\alpha}$
 
 \[3] Yield Space,’YieldSpace: An Automated Liquidity Provider for Fixed Yield Tokens’: [https://yield.is/YieldSpace.pdf](https://yield.is/YieldSpace.pdf)
 
