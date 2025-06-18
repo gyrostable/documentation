@@ -17,7 +17,7 @@ layout:
     visible: true
 ---
 
-# The Founding Member Vault
+## The Founding Member Vault
 
 This is intended to be an early proof-of-personhood vault, in which unique people who contribute to the protocol can have a voice in governance.
 

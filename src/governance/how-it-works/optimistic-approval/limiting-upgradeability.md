@@ -2,7 +2,7 @@
 description: An implementation of an Optimistic Approval mechanism
 ---
 
-# Limiting Upgradeability
+## Limiting Upgradeability
 
 ## All users, not just governors, should have a say
 

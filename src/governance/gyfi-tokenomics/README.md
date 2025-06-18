@@ -4,7 +4,7 @@ description: >-
   token).
 ---
 
-# GYFI Tokenomics
+## GYFI Tokenomics
 
 ## GYFI deployment addresses
 

@@ -27,8 +27,6 @@ export default hopeTheme({
 
       footer: "Gyroscope 2025 ©",
 
-      displayFooter: true,
-
       metaLocales: {
         editLink: "Edit this page on GitHub",
       },

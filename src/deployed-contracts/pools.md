@@ -1,10 +1,10 @@
-# Pools
+## Pools
 
-## Individual E-CLP addresses
+### Individual E-CLP addresses
 
 * For an exhaustive list of all deployed E-CLPs refer to [Dune](https://dune.com/gyro_finance/gyroscope-e-clps).
 
-## Key E-CLP addresses
+### Key E-CLP addresses
 
 *   Ethereum:
 
@@ -66,7 +66,7 @@
 
 
 
-## Fees Receiver
+### Fees Receiver
 
 Gyroscope's fees receiver on each chain is 0xA01ba17778A860EC92053325d0de4022240ceeA4
 

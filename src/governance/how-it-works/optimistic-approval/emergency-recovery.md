@@ -1,4 +1,4 @@
-# Emergency Recovery
+## Emergency Recovery
 
 An emergency recovery mechanism for the governance contract is included as a fallback in case something goes wrong with the governance contracts and they are no longer usable (e.g, if they are bricked because of a smart contract bug or incorrect parameterization change).&#x20;
 

@@ -1,8 +1,6 @@
-# L2 Governance
+## L2 Governance
 
 L2 governance is controlled on each L2 by : **0xd62bb3c3D6C7BD5C6bA64aA4D7BF05aE6AD10568**
-
-
 
 For example:
 

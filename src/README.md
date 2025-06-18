@@ -9,11 +9,11 @@ highlights:
     bgImage: /assets/clean_background.png
     bgImageDark: /assets/clean_background.png
     bgImageStyle:
-      background-repeat: no-repeat
-      background-size: cover
-      background-position: center
+      height: "800px"
+      width: "100%"
+      backgroundSize: "cover"
     features:
-      - title: Start here
+      - title: Docs
         icon: solar:play-bold
         details: Click here to get started
         link: /tldr.md
@@ -36,10 +36,8 @@ highlights:
       - title: Deployments
         icon: mdi:location
         details: See contract addresses
-        link: /deployed-contracts/contract-addresses/README.md
+        link: /deployed-contracts/README.md
 
 
-copyright: true
 footer: Theme by <a href="https://theme-hope.vuejs.press/" target="_blank">VuePress Theme Hope</a> | Theme MIT Licensed, Copyright © 2019-present
 ---
-

@@ -1,4 +1,4 @@
-# Vote delegation
+## Vote delegation
 
 It is possible to delegate your voting power (some or all of it) to others within the Gyroscope governance system. Voting power can be delegated to any address.&#x20;
 

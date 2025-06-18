@@ -2,7 +2,7 @@
 description: Details about how to interact with the consolidated price feed
 ---
 
-# Consolidated price feed
+## Consolidated price feed
 
 ## Interacting with the price feed
 
@@ -51,7 +51,7 @@ const prices = await oracle.getPricesUSD(assets);
 console.log(prices);
 ```
 
-## Deployed contracts
+### Deployed contracts
 
 The consolidated price feed is currently deployed on the following networks:
 

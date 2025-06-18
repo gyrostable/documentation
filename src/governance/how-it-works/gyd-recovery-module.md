@@ -1,4 +1,4 @@
-# GYD Recovery Module
+## GYD Recovery Module
 
 Any user can stake GYD in the GYD recovery module for use in the event that the stablecoin reserve ratio falls below some predefined threshold.&#x20;
 

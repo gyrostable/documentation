@@ -3,9 +3,7 @@ cover: ../../../assets/Councillor vault cover.png
 coverY: 25.21228771228771
 ---
 
-# Councillor Vault
-
-
+## Councillor Vault
 
 ## Who are the Councillors?
 

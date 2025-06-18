@@ -4,7 +4,7 @@ description: >-
   with veto rights
 ---
 
-# Optimistic Approval
+## Optimistic Approval
 
 Optimistic Approval is a new governance primitive that allows governance changes to be conditional on a timelock and veto process. It is a very flexible mechanism that can be used both to streamline governance processes and to better align incentives among protocol participants, not just in Gyroscope but also in DeFi governance more broadly. Read our research piece introducing Optimistic Approval [here](https://ournetwork.substack.com/p/our-network-deep-dive-2).
 

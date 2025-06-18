@@ -1,4 +1,4 @@
-# GYFI
+## GYFI
 
 Mainnet deployment: [https://etherscan.io/token/0x70c4430f9d98b4184a4ef3e44ce10c320a8b7383](https://etherscan.io/token/0x70c4430f9d98b4184a4ef3e44ce10c320a8b7383)
 

@@ -1,4 +1,4 @@
-# Action Tiering
+## Action Tiering
 
 Some actions taken by governance are much more impactful and riskier than others.
 

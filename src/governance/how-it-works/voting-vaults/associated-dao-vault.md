@@ -3,7 +3,7 @@ cover: ../../../assets/Associated DAO vault cover.png
 coverY: 150.60921248142645
 ---
 
-# Associated DAO Vault
+## Associated DAO Vault
 
 The composability of DeFi means that sometimes actions in one protocol directly or indirectly affect another protocol. Therefore it makes sense to give such protocols a voice in the governance process.&#x20;
 

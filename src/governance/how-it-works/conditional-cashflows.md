@@ -1,4 +1,4 @@
-# Conditional cashflows
+## Conditional cashflows
 
 An important ability of governance is to be a good steward of the GYD reserve structure, adapting it as the DeFi space changes. Long-term, the decentralised Gyroscope system may generate operational cash flows. A key design component is to structure such cash flows to incentivise good stewardship aligned with the longterm system and disincentivize short-termism.
 

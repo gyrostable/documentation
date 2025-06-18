@@ -1,4 +1,4 @@
-# Eligibility
+## Eligibility
 
 Eligibility for GYFI was voted on by the Gyroscope DAO in a series of Gyroscope Improvement Proposals \[GIPs].&#x20;
 

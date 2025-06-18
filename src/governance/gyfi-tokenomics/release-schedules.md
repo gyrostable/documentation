@@ -1,4 +1,4 @@
-# Release schedules
+## Release schedules
 
 Note: amounts on this page should be considered (best effort) approximations and are subject to change. Not financial advice.&#x20;
 

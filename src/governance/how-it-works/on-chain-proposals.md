@@ -1,4 +1,4 @@
-# Proposals
+## Proposals
 
 ## Lifecycle of a proposal
 
