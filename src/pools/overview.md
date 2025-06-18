@@ -26,7 +26,7 @@ Gyroscope’s ‘Concentrated Liquidity Pools’ (CLPs) are a class of Automated
 
 <figure><img src="../assets/3-CLP-v4.gif" alt="Stylized representation of capital efficiency gains of 3-CLPs"><figcaption><p>Stylized representation of capital efficiency gains of 3-CLPs</p></figcaption></figure>
 
-* _**E-CLPs**_ - aka [Elliptic-CLPs](concentrated-liquidity-pools.md)[ ](e-clps.md)support asymmetric concentrated liqudity for two assets. They provide a new type of concentrated liquidity that allows highly flexible and asymmetric liquidity profiles in a single pool position.
+* _**E-CLPs**_ - aka [Elliptic-CLPs](e-clps.md)support asymmetric concentrated liqudity for two assets. They provide a new type of concentrated liquidity that allows highly flexible and asymmetric liquidity profiles in a single pool position.
 
 <figure><img src="../assets/E-CLP-liquidity-density-animated-chart-v6.gif" alt=""><figcaption><p>The E-CLP's asymmetric concentrated liquidity improves capital efficiency over StableSwap by putting liquidity only where it is needed.</p></figcaption></figure>
 
