@@ -6,8 +6,8 @@ highlights:
   - header: Gyroscope Documentation
     description: Start here to learn more about Gyroscope.
     # image: /assets/image/markdown.svg
-    bgImage: /assets/clean_background.png
-    bgImageDark: /assets/clean_background.png
+    bgImage: ..public/assets/clean_background.png
+    bgImageDark: ..public/assets/clean_background.png
     bgImageStyle:
       height: "800px"
       width: "100%"
