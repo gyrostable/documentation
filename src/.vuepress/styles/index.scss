@@ -1,1 +1,17 @@
 // place your custom styles here
+
+h1 {
+  display: none !important;
+}
+
+/* Add shadow and light background to homepage feature tiles */
+.home .features .feature {
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.12), 0 1.5px 6px 0 rgba(0,0,0,0.10);
+  border-radius: 12px;
+  background: rgba(255,255,255,0.85);
+  transition: box-shadow 0.2s, background 0.2s;
+}
+.home .features .feature:hover {
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.18), 0 3px 12px 0 rgba(0,0,0,0.14);
+  background: #fff;
+}

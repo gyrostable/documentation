@@ -2,10 +2,10 @@ import { sidebar } from "vuepress-theme-hope";
 
 export const enSidebar = sidebar({
   "/": [
-    { text: "tldr: What is Gyroscope", link: "/", icon: "", collapsible: false },
+    { text: "tldr: What is Gyroscope", link: "/tldr", icon: "", collapsible: false },
     { text: "Audit Reports", link: "/audit-reports.md", icon: "", collapsible: false },
     {
-      text: "POOLS",
+      text: "Pools",
       icon: "",
       collapsible: true,
       children: [

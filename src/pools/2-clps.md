@@ -18,10 +18,11 @@ Given quantities of real reserves (x,y) in the pool and the pool’s pricing ran
 
 <figure><img src="../assets/2-clp-v2 (1) (2).gif" alt="Stylized representation of capital efficiency gains of 2-CLPs"><figcaption><p>Stylized representation of capital efficiency gains of 2-CLPs</p></figcaption></figure>
 
-> **Info:**  
-> The notion of virtual reserves was first introduced in the YieldSpace whitepaper [\[3\]](2-clps.md#notes) and Uniswap v3 first introduced the concept of concentrated liquidity pools [\[4\]](2-clps.md#notes).  
->
-> 2-CLPs are best understood as a simplified design of Uniswap v3 that is tailored to a specific use-case. Specializing the design for the most-traded ranges of included assets enables a pool with (i) high capital efficiency and (ii) high gas-efficiency.
+::: info
+The notion of virtual reserves was first introduced in the YieldSpace whitepaper [\[3\]](2-clps.md#notes) and Uniswap v3 first introduced the concept of concentrated liquidity pools [\[4\]](2-clps.md#notes).  
+
+2-CLPs are best understood as a simplified design of Uniswap v3 that is tailored to a specific use-case. Specializing the design for the most-traded ranges of included assets enables a pool with (i) high capital efficiency and (ii) high gas-efficiency.
+:::
 
 ## Benefits of 2-CLPs
 
@@ -41,17 +42,19 @@ _**- Smart contract risk:**_ As with any smart contract, there is an inherent ri
 
 _**- Strategy risk:**_ By entering into the pool, LPers commit to a market making strategy, and in turn a portfolio rebalancing rule, that fundamentally has different payoffs than just holding the underlying assets or using a different rebalancing rule. As prices change, the pool sells one asset in exchange for the other [\[7\]](2-clps.md#notes). In an extreme case, the relative price between the two pool assets moves permanently out of the price range. In that case, the pool is left with only the less valuable asset.&#x20;
 
-> **Info:**  
-> For the CLPs, this strategy risk can be higher than for a pool without concentrated liquidity because the strategy allows more trading at any price within the pool's price range.  
->
-> This is a side effect of capital efficiency and low price impact for traders. In an extreme case, when the value of one of the assets goes to 0, the value of the pool goes to 0 as well. The strategy risk can be reduced by choosing fundamentally related assets for the two sides of the pool (because then severe permanent shifts in relative prices are less likely and oscillations are more likely) and by carefully selecting price ranges [\[8\]](2-clps.md#notes).
+::: info
+For the CLPs, this strategy risk can be higher than for a pool without concentrated liquidity because the strategy allows more trading at any price within the pool's price range.  
+
+This is a side effect of capital efficiency and low price impact for traders. In an extreme case, when the value of one of the assets goes to 0, the value of the pool goes to 0 as well. The strategy risk can be reduced by choosing fundamentally related assets for the two sides of the pool (because then severe permanent shifts in relative prices are less likely and oscillations are more likely) and by carefully selecting price ranges [\[8\]](2-clps.md#notes).
+:::
 
 _**- Adverse selection risk:**_ In any AMM pool, if the true relative market price between assets in the pool jumps permanently, LPers incur a loss due to adverse selection. In particular, the pool is left offering 'stale' quotes at worse than true market price. The adverse selection loss will be equal to the profit to arbitrageurs for moving the pool's quoted price back into equilibrium with the rest of the market.&#x20;
 
-> **Info:**  
-> For the CLPs, this risk can be higher than for a pool without concentrated liquidity because the CLP design offers deeper markets within the pool's price range.  
->
-> In the case of a price jump, more arbitrage is enabled. If, however, the price later returns to the initial price this loss is not realized and the pool profits from trading fees.
+::: info
+For the CLPs, this risk can be higher than for a pool without concentrated liquidity because the CLP design offers deeper markets within the pool's price range.  
+
+In the case of a price jump, more arbitrage is enabled. If, however, the price later returns to the initial price this loss is not realized and the pool profits from trading fees.
+:::
 
 One facet of adverse selection risk for any AMM pool, including CLPs: LPs who join a pool while the pool is off balance from the market price may incur an adverse selection loss as this contributes to an arbitrage opportunity in the pool. Best practice is to check that the spot price in the pool is near the market price when joining a pool. Should the pool’s spot price diverge from the market price significantly, an LP would benefit from swapping first in the pool to bring it to the market price before adding liquidity.
 

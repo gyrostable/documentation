@@ -2,30 +2,36 @@ import { navbar } from "vuepress-theme-hope";
 
 export const enNavbar = navbar([
   "/",
-  "/portfolio",
-  "/demo/",
+  "/tldr",
   {
-    text: "Guide",
-    icon: "lightbulb",
-    prefix: "/guide/",
-    children: [
-      {
-        text: "Bar",
-        icon: "lightbulb",
-        prefix: "bar/",
-        children: ["baz", { text: "...", icon: "ellipsis", link: "#" }],
-      },
-      {
-        text: "Foo",
-        icon: "lightbulb",
-        prefix: "foo/",
-        children: ["ray", { text: "...", icon: "ellipsis", link: "#" }],
-      },
-    ],
+    text: "App",
+    // icon: "link",
+    link: "https://app.gyro.finance",
   },
   {
-    text: "V2 Docs",
-    icon: "book",
-    link: "https://theme-hope.vuejs.press/",
+    text: "X",
+    // icon: "link",
+    link: "https://x.com/GyroStable",
   },
+  {
+    text: "Discord",
+    // icon: "link",
+    link: "https://discord.com/invite/2vnqnS7wE6",
+  },
+  {
+    text: "Forum",
+    // icon: "link",
+    link: "https://forum.gyro.finance",
+  },
+  {
+    text: "Governance",
+    // icon: "link",
+    link: "https://gov.gyro.finance",
+  },
+  {
+    text: "Dune",
+    // icon: "link",
+    link: "https://dune.com/gyro_finance/gyroscope",
+  },
+
 ]);

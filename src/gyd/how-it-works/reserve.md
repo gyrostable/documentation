@@ -8,10 +8,11 @@ description: Stratifying reserve assets to build resilience
 
 The Gyroscope reserve is designed to maximize the resilience of the stablecoin system. This requires that risks are 'stratified', or isolated from each other. Losses that accrue in one sub-system should never spill over into other connected sub-systems.
 
-> **Info:**  
-> To illustrate why this is important, consider that, for example, LP positions in the Y Curve pool take on the composed risks of USDT, Dai, USDC, TUSD, Compound, Aave, and Curve. Due to the design of a Curve AMM pool, if one of these components were to fail, the value of the whole pool would collapse.​
->
-> This is commonly referred to as 'composability risk' or also 'contagion risk'.
+::: info
+To illustrate why this is important, consider that, for example, LP positions in the Y Curve pool take on the composed risks of USDT, Dai, USDC, TUSD, Compound, Aave, and Curve. Due to the design of a Curve AMM pool, if one of these components were to fail, the value of the whole pool would collapse.​
+
+This is commonly referred to as 'composability risk' or also 'contagion risk'.
+:::
 
 There are two forms of Gyroscope reserves currently:
 

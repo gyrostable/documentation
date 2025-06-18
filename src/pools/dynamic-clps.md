@@ -16,8 +16,9 @@ Dynamic pools work with any underlying Gyro CLP and work on Balancer v2 or v3:
 
 Dynamic CLPs build on top of vanilla CLPs with the use of a dynamic rate provider that allows a pool to track the market as the pool moves out of range and continue to provide liquidity. They are designed in particular for key volatile pairs, such as ETH/BTC/USD and FX pairs and other highly liquid pairs.
 
-> **Info:**  
-> A rate provider is a mechanism incorporated into liquidity pools that tells a pool how to scale asset amounts. The pool math then uses the scaled amounts in swap logic. The standard usage of rate providers is to tell the pool how much a given asset can directly be redeemed for an underlying asset (e.g., wstETH can be redeemed directly for stETH).
+::: info
+A rate provider is a mechanism incorporated into liquidity pools that tells a pool how to scale asset amounts. The pool math then uses the scaled amounts in swap logic. The standard usage of rate providers is to tell the pool how much a given asset can directly be redeemed for an underlying asset (e.g., wstETH can be redeemed directly for stETH).
+:::
 
 The dynamic rate provider is designed to plug into a CLP to enable price ranges to safely adjust over time. It is connected to a price feed but does not automatically reflect the current value of the feed. It normally functions like a constant rate provider, which returns the same stored value. It differs from a constant rate provider by providing an update method by which the stored value can be updated based on the feed. This update is conditional and is designed to avoid arbitrage loss / MEV exposure to LPers in the update.
 

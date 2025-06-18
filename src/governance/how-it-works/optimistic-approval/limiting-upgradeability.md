@@ -44,6 +44,7 @@ The Optimistic Approval framework generalizes who has governing powers and who h
 
 In this first application to Gyroscope in the form of limiting upgradeability, Optimistic Approval is designed to give protocol users a veto power to stop governance changes that they disagree with. In this case, protocol users fulfil the guardian role of stewarding the protocol vision (e.g., of maintaining stability). The mechanism introduces checks and balances on governors' power. Should governors try to deviate from the shared vision of the protocol, Gyro Dollar holders will be able to exercise optional veto powers during the time delay to stop it. Ordinarily, Gyro Dollar holders will not need to do anything if governance actions are sound. However, if governance actions are contentious, Gyro Dollar holders can exercise the veto to block the action.
 
-> **Info:**  
-> Optimistic Approval was initially devised for this application as a means to circumvent an impossibility conjecture around secure decentralized governance arising from the models in our [Stablecoins 2.0 paper](https://arxiv.org/abs/2006.12388) (Conjecture 1).
+::: info
+Optimistic Approval was initially devised for this application as a means to circumvent an impossibility conjecture around secure decentralized governance arising from the models in our [Stablecoins 2.0 paper](https://arxiv.org/abs/2006.12388) (Conjecture 1).
+:::
 

@@ -9,8 +9,9 @@ Gyroscope uses **two different automated market types:**
 * a **Dynamic Stability Mechanism** (DSM) design to quote mint and redeem prices of stablecoin units, while accounting for potential shocks to underlying assets
 * multiple **GYD Trading Pools** that concentrate liquidity within the price bounds of the PAMM by customizing Balancer v2 pools
 
-> **Info:**  
-> It is also possible to think about this market structure with terminology from traditional finance. Accordingly, the DSM would be the primary, or issuing, market and the Gyro Money Markets would be the secondary, or trading, market.
+::: info
+It is also possible to think about this market structure with terminology from traditional finance. Accordingly, the DSM would be the primary, or issuing, market and the Gyro Money Markets would be the secondary, or trading, market.
+:::
 
 ## Interplay of markets
 

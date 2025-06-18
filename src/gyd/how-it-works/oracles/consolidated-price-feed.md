@@ -1,4 +1,4 @@
-<!-- # Consolidated price feed
+# Consolidated price feed
 
 {% embed url="https://www.youtube.com/watch?v=jPmPbnYT07A" %}
 
@@ -16,9 +16,7 @@ In effect, multiple consistency checks are applied that reference multiple, deep
 
 To read about the mathematical specification and implementation, see the section below.
 
-{% content-ref url="../../technical-documents.md" %}
 [technical-documents.md](../../technical-documents.md)
-{% endcontent-ref %}
 
 ## Data Sources
 
@@ -72,9 +70,9 @@ The design space for absolute price checks largely revolves around the choice of
 * The choice of which data provider to include into the median price can be debated. For the CPF, the signed exchange price of Coinbase and the Chainlink oracle will be used.
 * The choice of which stablecoins to include in the median should be informed by the stablecoins volatility and DEX liquidity. For the CPF, the USDC, USDT, DAI will be used. Effectively, the stablecoin issuer is interpreted as the oracle.
 
-{% hint style="info" %}
+::: info
 In principle, further on-chain information can be incorporated into the median to further increase the CPF’s resilience. For a respective exploration and additional information refer to the [Technical Specification](https://github.com/gyrostable/technical-papers/blob/main/Consolidated%20Price%20Feed%20and%20Circuit%20Breakers/Design%20of%20the%20Consolidated%20Price%20Feed%20and%20Circuit%20Breaker%20System.pdf).
-{% endhint %}
+:::
 
 
 
@@ -140,5 +138,3 @@ The circuit breaker parameters can be calibrated by taking into account the mani
 ### Oracle guardian mechanism&#x20;
 
 A DAO-elected whitelist of oracle guardians can initiate safety mode for a defined period of time. The DAO is able to replace the list of guardians at any time. This mechanism is designed as an emergency response lever, which only has pause control, and is intended to be activated in the event of an oracle failure or if a smart contract bug is found.
-
-## -->

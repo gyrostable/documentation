@@ -12,12 +12,13 @@ Elliptic CLPs, or E-CLPs, allow trading along the curve of an ellipse. Similar t
 
 E-CLPs will be used for GYD trading markets, which are pools that pair GYD against other assets, and are calibrated to provide liquidity primarily around the peg, but with price bounds tailored to DSM redemption prices.
 
-> **Info:**  
-> By performing different manipulations on a circle, the E-CLP can be calibrated to different use-cases. The main use-cases are listed below with colloquial explanations:  
-> 
-> * Symmetric stretch: price-bounded ‘StableSwap’ [1]  
-> * Asymmetric stretch: high liquidity at 1$, with residual liquidity at other prices  
-> * Constant circle: alternative to constant product concentrated liquidity
+::: info
+By performing different manipulations on a circle, the E-CLP can be calibrated to different use-cases. The main use-cases are listed below with colloquial explanations:  
+
+* Symmetric stretch: price-bounded ‘StableSwap’ [1]  
+* Asymmetric stretch: high liquidity at 1$, with residual liquidity at other prices  
+* Constant circle: alternative to constant product concentrated liquidity
+:::
 
 The below visual representation shows how the E-CLP can be calibrated to have price-bounds, an upper ceiling of 1 USD, and an unevenly decaying price below 1 USD.
 
@@ -39,10 +40,11 @@ For instance, E-CLPs can be made to resemble the liquidity profiles of Stableswa
 
 In settings where the structure of assets leads to knowledge of trading price constraints or market makers otherwise know that it is unprofitable to provide liquidity outside of given prices, this can provide significant capital efficiency gains.
 
-> **Info:**  
-> For example, if an asset has known minting and redemption prices, order flow beyond these prices should always route through the minting and redemption mechanism and so there is no gain to liquidity provision at such prices.
->
-> In cases like this, using untruncated trading curves, such as calibrating a Stableswap curve for this situation, leads to a much less efficient outcome as liquidity is implicitly provided at unnecessary prices and thus remains unused compared to the flexibility of an E-CLP.
+::: info 
+For example, if an asset has known minting and redemption prices, order flow beyond these prices should always route through the minting and redemption mechanism and so there is no gain to liquidity provision at such prices.
+
+In cases like this, using untruncated trading curves, such as calibrating a Stableswap curve for this situation, leads to a much less efficient outcome as liquidity is implicitly provided at unnecessary prices and thus remains unused compared to the flexibility of an E-CLP.
+:::
 
 **Efficiency for yield-bearing assets**: E-CLPs boost efficiency on several fronts. In addition to asymmetric concentrated liquidity, E-CLPs build in rate providers. Rate providers make yield-bearing asset pools more efficient by:
 
@@ -55,10 +57,11 @@ In settings where the structure of assets leads to knowledge of trading price co
 
 The E-CLP parameterization displayed above effectively reserves some liquidity for price ranges that may occur, but are less common, but only targeted where it is actually needed.
 
-> **Info:**  
-> Looking at, for example, Liquity’s LUSD or Lido’s stETH (1) the minting price roughly equates the upper price bound and (2) the redemption price roughly equates the lower price bound.
->
-> For these assets it would thus be desirable to focus liquidity on the price range between these two soft price-bounds. In these settings, an E-CLP would provide capital efficiency gains over Stableswap pools for these asset pairs.
+::: info
+Looking at, for example, Liquity’s LUSD or Lido’s stETH (1) the minting price roughly equates the upper price bound and (2) the redemption price roughly equates the lower price bound.
+
+For these assets it would thus be desirable to focus liquidity on the price range between these two soft price-bounds. In these settings, an E-CLP would provide capital efficiency gains over Stableswap pools for these asset pairs.
+:::
 
 Notably, there is always some cost to minting/ redemption operations, be it operational (gas costs of mint/ redeem txs) or fundamental (opportunity costs, ‘educational costs’, or other). This premium can be roughly incorporated in defining the price bounds.
 
@@ -103,7 +106,8 @@ The various parameter values can be understood as follows:
 
 <figure><img src="https://lh7-us.googleusercontent.com/7Mvl_CtmYuy9WFjhKT7TsXZvpNowu2tJRJ7-kCdeZvvPhuPnt5Iyr5S1afs_R04MVUe5x2ghEQJ22YJhDLYKTMAQ6z-K0QxnrTL4S2Gt3uK-UuICiqgbhND3C3JnGVb123hKuJrbKZwv-8dfxB9WN6I" alt=""><figcaption><p>Intuition on E-CLP construction</p></figcaption></figure>
 
-> **Info:**  
-> Note, the ordering of the two tokens (“token0” and “token1”) follows from the lexicographical order of the contract address - as required by the Balancer Vault. For example, comparing the addresses “A0b8[..]” and “e07F[..]” , the address starting with “A0b8” would be Token0, the address starting with “e07F” would be Token1.
->
-> For ease of reading, calibrations are typically denoted with GYD as token0 and the other asset as token1. Whenever Balancer’s rules prohibit this (and require that GYD is token1), the parameters need to be “flipped” as follows: alpha' := 1/beta, beta' := 1/alpha, s’ = c, c’ = s.
+::: note 
+The ordering of the two tokens (“token0” and “token1”) follows from the lexicographical order of the contract address - as required by the Balancer Vault. For example, comparing the addresses “A0b8[..]” and “e07F[..]” , the address starting with “A0b8” would be Token0, the address starting with “e07F” would be Token1.
+
+For ease of reading, calibrations are typically denoted with GYD as token0 and the other asset as token1. Whenever Balancer’s rules prohibit this (and require that GYD is token1), the parameters need to be “flipped” as follows: alpha' := 1/beta, beta' := 1/alpha, s’ = c, c’ = s.
+:::
