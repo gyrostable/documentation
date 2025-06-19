@@ -6,8 +6,8 @@ highlights:
   - header: Gyroscope Documentation
     description: Start here to learn more about Gyroscope.
     # image: /assets/image/markdown.svg
-    bgImage: ..public/assets/clean_background.png
-    bgImageDark: ..public/assets/clean_background.png
+    bgImage: /clean_background.png
+    bgImageDark: /clean_background.png
     bgImageStyle:
       height: "800px"
       width: "100%"
@@ -30,7 +30,7 @@ highlights:
         details: Learn how governance works
         link: /governance/overview.md
       - title: GYD
-        icon: /assets/gyro_logo.svg
+        icon: /gyro_logo.svg
         details: The Gyro Dollar
         link: /gyd/readme.md
       - title: Deployments

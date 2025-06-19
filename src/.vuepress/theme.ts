@@ -11,7 +11,7 @@ export default hopeTheme({
   //   url: "",
   // },
 
-  logo: "assets/gyro_logo.svg",
+  logo: "/gyro_logo.svg",
 
   repo: "https://github.com/gyrostable",
 
