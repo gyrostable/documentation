@@ -15,7 +15,7 @@ Short specification document for the 3-CLP with all technical details, but witho
 
 ### 2 and 3-CLP mathematical derivation
 Mathematical derivation and detailed discussion of the 2-CLP and 3-CLP.
-<PDF url="/assets/2-CLP%203-CLP%20Mathematics.pdf" />
+<PDF url="/assets/2clp_3clp_mathematics.pdf" />
 
 ### Fundamental mathematical tools
 Some fundamental mathematical tools used in the derivation of all our CLPs.
@@ -23,7 +23,7 @@ Some fundamental mathematical tools used in the derivation of all our CLPs.
 
 ### Numerical analysis of the 3-CLP
 Numerical analysis of the 3-CLP implementation, focusing on non-overflow and accuracy guarantees for the Newton iteration.
-<PDF url="/assets/3-CLP%20Numerical%20Guarantees.pdf" />
+<PDF url="/assets/3clp_numerical_gaurantees.pdf" />
 
 ## E-CLP
 
