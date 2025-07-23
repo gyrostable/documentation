@@ -29,15 +29,15 @@ Numerical analysis of the 3-CLP implementation, focusing on non-overflow and acc
 
 ### E-CLP technical overview
 Technical overview document for the E-CLP.
-<PDF url="/assets/E-CLP%20Technical%20Specification.pdf" />
+<PDF url="/assets/eclp_technical_specification.pdf" />
 
 ### E-CLP mathematical derivation
 Mathematical derivation and detailed discussion of the E-CLP.
-<PDF url="/assets/E-CLP%20Mathematics.pdf" />
+<PDF url="/assets/eclp_mathematics.pdf" />
 
 ### High precision calculations
 Derivation and discussion of high-precision implementations of the E-CLP operations.
-<PDF url="/assets/E-CLP%20high-precision%20calculations.pdf" />
+<PDF url="/assets/eclp_high_precision.pdf" />
 
 ### E-CLP and Balancer's SOR
 Derivation of various derivatives used to integrate the E-CLP with Balancer's Smart Order Routing mechanism.
