@@ -52,4 +52,6 @@ Longer term, LP positions in LST E-CLPs could be integrated into a leverage mech
 
 Lastly, GYD is launched with a special AMO pools, implemented at the protocol level, which help to bootstrap GYD liquidity in early stages and new markets. The bootstrapping pool provides a pre-set amount of GYD that can be issued against yield-bearing stablecoins as a reserve asset by swapping through the pool. This is provided as a more straightforward alternative to minting directly against reserve assets, which is a complex process expected to be undertaken by sophisticated market makers in the future.
 
+## GYFI governance token
 
+GYFI aligns the stewardship with the growth and profitability of Gyroscope. It forms the keystone of community stewardship and can be staked as a primary source of voting power in a pluralistic governance system. It ensures inclusive and decentralized nature of protocol governance. It also aligns the protocol around long-term value and utility in a way that enforces user protections. It encodes a Conditional Cashflows mechanism through which governance can realize cashflows in a way connected to long-term system health. Governance may activate this with a buy-and-burn mechanism in strategic periods.
