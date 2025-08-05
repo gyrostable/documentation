@@ -51,7 +51,7 @@ In cases like this, using untruncated trading curves, such as calibrating a Stab
 
 <figure><img src="../assets/Rate-providers-v8.gif" alt=""><figcaption><p>E-CLP rate providers make yield-bearing asset pools more efficient by automating liquidity management and mitigating LVR.</p></figcaption></figure>
 
-**Benefits of E-CLPs for Gyroscope**: The capital efficiency gains of the E-CLP are particularly large for GYDGyro tradingMoney mMarket pools, which pair GYD with other assets. GYD should normally trade between the minting price of $1 and the redemption price. In most cases, GYD should trade near $1. In niche situations, however, like under contingency pricing in the DSM, the redemption price may be at a discount. An E-CLP can be calibrated for this precise liquidity profile bounded by minting and redemption prices. In comparison, a Stableswap pool would reserve half of its liquidity for prices above $1 whereas such liquidity is unnecessary.
+**Benefits of E-CLPs for Gyroscope**: The capital efficiency gains of the E-CLP are particularly large for GYD trading pools, which pair GYD with other assets. GYD should normally trade between the minting price of $1 and the redemption price. In most cases, GYD should trade near $1. In niche situations, however, like under contingency pricing in the DSM, the redemption price may be at a discount. An E-CLP can be calibrated for this precise liquidity profile bounded by minting and redemption prices. In comparison, a Stableswap pool would reserve half of its liquidity for prices above $1 whereas such liquidity is unnecessary.
 
 The E-CLP parameterization displayed above effectively reserves some liquidity for price ranges that may occur, but are less common, but only targeted where it is actually needed.
 
