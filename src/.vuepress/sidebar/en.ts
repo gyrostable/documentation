@@ -26,11 +26,12 @@ export const enSidebar = sidebar({
         { text: "Overview", link: "/governance/overview.md" },
         {
           text: "How it works",
-          link: "/governance/how-it-works/README.md",
           collapsible: true,
           children: [
-            { text: "Voting Vaults", link: "/governance/how-it-works/voting-vaults/README.md", collapsible: true, children: 
+            { text: "Overview", link: "/governance/how-it-works/README.md" },
+            { text: "Voting Vaults", collapsible: true, children: 
               [
+                    { text: "Overview", link: "/governance/how-it-works/voting-vaults/README.md" },
                     { text: "The Founding Member Vault", link: "/governance/how-it-works/voting-vaults/the-founding-member-vault.md" },
                     { text: "Councillor Vault", link: "/governance/how-it-works/voting-vaults/councillor-vault.md" },
                     { text: "Associated DAO Vault", link: "/governance/how-it-works/voting-vaults/associated-dao-vault.md" },
@@ -45,9 +46,9 @@ export const enSidebar = sidebar({
             { text: "GYD Recovery Module", link: "/governance/how-it-works/gyd-recovery-module.md" },
             {
               text: "Optimistic Approval",
-              link: "/governance/how-it-works/optimistic-approval/README.md",
               collapsible: true,
               children: [
+                { text: "Overview", link: "/governance/how-it-works/optimistic-approval/README.md" },
                 { text: "Emergency Recovery", link: "/governance/how-it-works/optimistic-approval/emergency-recovery.md" },
                 { text: "Limiting Upgradeability", link: "/governance/how-it-works/optimistic-approval/limiting-upgradeability.md" },
               ],
@@ -57,9 +58,9 @@ export const enSidebar = sidebar({
         { text: "Governance process", link: "/governance/governance-process.md" },
         {
           text: "GYFI Tokenomics",
-          link: "/governance/gyfi-tokenomics/README.md",
           collapsible: true,
           children: [
+            { text: "Overview", link: "/governance/gyfi-tokenomics/README.md" },
             { text: "Token Allocation", link: "/governance/gyfi-tokenomics/token-allocation" },
             { text: "Release schedules", link: "/governance/gyfi-tokenomics/release-schedules" },
             { text: "Eligibility", link: "/governance/gyfi-tokenomics/eligibility" },
@@ -75,15 +76,15 @@ export const enSidebar = sidebar({
         { text: "Overview", link: "/gyd/readme.md" },
         {
           text: "How it works",
-          link: "/gyd/how-it-works/README.md",
           collapsible: true,
           children: [
+            { text: "Overview", link: "/gyd/how-it-works/README.md" },
             { text: "Reserve design", link: "/gyd/how-it-works/reserve.md" },
             {
               text: "Autonomous pricing",
-              link: "/gyd/how-it-works/autonomous-pricing/README.md",
               collapsible: true,
               children: [
+                { text: "Overview", link: "/gyd/how-it-works/autonomous-pricing/README.md" },
                 { text: "Dynamic Stability Mechanism", link: "/gyd/how-it-works/autonomous-pricing/pamm.md" },
                 { text: "GYD Trading Pools", link: "/gyd/how-it-works/autonomous-pricing/samm.md" },
                 { text: "Economic intuition", link: "/gyd/how-it-works/autonomous-pricing/economic-intuition.md" },
@@ -93,9 +94,9 @@ export const enSidebar = sidebar({
             { text: "Complementary stability mechanisms", link: "/gyd/how-it-works/gyroscope-stability.md" },
             {
               text: "Oracles & price feeds",
-              link: "/gyd/how-it-works/oracles/README.md",
               collapsible: true,
               children: [
+                { text: "Overview", link: "/gyd/how-it-works/oracles/README.md" },
                 { text: "Consolidated price feed", link: "/gyd/how-it-works/oracles/consolidated-price-feed.md" },
                 { text: "LP share pricing", link: "/gyd/how-it-works/oracles/lp-share-pricing.md" },
               ],
@@ -107,9 +108,9 @@ export const enSidebar = sidebar({
         },
         {
           text: "sGYD",
-          link: "/gyd/sgyd/README.md",
           collapsible: true,
           children: [
+            { text: "Overview", link: "/gyd/sgyd/README.md" },
             { text: "Yield Emission Process", link: "/gyd/sgyd/yield-emission-process.md" },
             { text: "Security", link: "/gyd/sgyd/security.md" },
             { text: "Audit Report", link: "/gyd/sgyd/audit-report.md" },
@@ -134,7 +135,6 @@ export const enSidebar = sidebar({
             { text: "GYD Core", link: "/deployed-contracts/gyd-core.md" },
             {
               text: "Governance",
-              link: "/deployed-contracts/governance/README.md",
               collapsible: true,
               children: [
                 { text: "L1 Governance", link: "/deployed-contracts/governance/l1-governance.md" },
