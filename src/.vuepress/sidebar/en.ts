@@ -60,9 +60,9 @@ export const enSidebar = sidebar({
           link: "/governance/gyfi-tokenomics/README.md",
           collapsible: true,
           children: [
-            { text: "Token Allocation", link: "/governance/gyfi-tokenomics/token-allocation.md" },
-            { text: "Release schedules", link: "/governance/gyfi-tokenomics/release-schedules.md" },
-            { text: "Eligibility", link: "/governance/gyfi-tokenomics/eligibility.md" },
+            { text: "Token Allocation", link: "/governance/gyfi-tokenomics/token-allocation" },
+            { text: "Release schedules", link: "/governance/gyfi-tokenomics/release-schedules" },
+            { text: "Eligibility", link: "/governance/gyfi-tokenomics/eligibility" },
           ],
         },
       ],
