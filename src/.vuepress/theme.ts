@@ -186,4 +186,5 @@ export default hopeTheme({
     //   },
     // },
   },
+  darkmode: "disable"
 });
